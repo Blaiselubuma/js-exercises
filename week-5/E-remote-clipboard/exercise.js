@@ -20,11 +20,12 @@ Also, for GET request, you can use the url directly in your browser address bar
 // Complete the code below
 
 var clipboardTitle = "BLAISE";
-var clipboardText = "TODAY THE CLASS IS A QUITE SOFT";
+var clipboardText = "I THINK TODAY THE CLASS IS A QUITE SOFT";
 var requestBody = { title: clipboardTitle, text: clipboardText };
 
 var postRequestParameters = {
   body: JSON.stringify(requestBody),
+  //body: requestBody,
   method: "POST",
   headers: {
     "content-type": "application/json"
